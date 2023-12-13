@@ -1,0 +1,96 @@
+/* HEADER CSS */
+.mobile-header {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background: rgb(252, 88, 217);
+    background-image: url(images/noise-light.png);
+    border-style: double;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .mb-header-home,
+  .mb-header-menu {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .mb-header-home:hover,
+  .mb-header-menu:hover {
+    color: blanchedalmond;
+  }
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: blanchedalmond;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.text-area {
+    flex: 1;
+    max-width: calc(50% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.media-container {
+    flex: 1;
+    max-width: calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.responsive-media {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.mobile-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer .navigation {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .text-area,
+    .media-container {
+        max-width: 100%;
+    }
+}

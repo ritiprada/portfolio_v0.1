@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+body {
+    margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  background-color: blanchedalmond;
+  background-image: url(images/noise-light.png);
+} 
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+.mobile-header {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  background: rgb(252, 88, 217);
+  background-image: url(images/noise-light.png);
+  border-style: double;
+  z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mb-header-home,
+.mb-header-menu {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.mb-header-home:hover,
+.mb-header-menu:hover {
+  color: blanchedalmond;
+}
+
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.text-area {
+    flex: 1;
+    max-width: calc(50% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.media-container {
+    flex: 1;
+    max-width: calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.responsive-media {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* 
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer .navigation {
+    margin-bottom: 10px;
+} */
+/* Footer Section */
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(252, 88, 217);
+  background-image: url(images/noise-light.png);
+  border-style: double;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer p {
+  margin: 0; /* Remove margin from the paragraph */
+}
+
+@media screen and (max-width: 768px) {
+    .text-area,
+    .media-container {
+        max-width: 100%;
+    }
+}
+
+    </style>
+    <title>MY MAG</title>
+</head>
+
+<body>
+    <header class="mobile-header">
+        <a href="index.html">
+          <div class="mb-header-home">
+            HOME
+          </div>
+        </a>
+        <a href="menu.html">
+          <div class="mb-header-menu">MENU</div>
+        </a>
+      </header>
+
+    <div class="content-wrapper">
+        <div class="text-area">
+            <h2 style="text-align: center;">Riti Prada Mag/Brand Guide Design</h2>
+            <h3>Timeline:</h3>
+            <p>
+
+                
+                4 days; approximately 4 hours of work</p>
+
+                <hr>
+                
+                <h3>Development Process:</h3>  <p>With this brand guide I really wanted to showcase the aspects of my cultural background. I took inspiration from many popular vintage desi magazines, movies and shoots from the 80-90’s to recreate something that is very unique and special to me. To create this brand guide I used illustrator, photoshop and InDesign.</p>
+                
+                
+        </div>
+
+        <div class="media-container">
+            <img class="responsive-media" src="projects/mag1.PNG" alt="Ritiprada Mag Cover">
+    
+            <img class="responsive-media" src="projects/mag2.PNG" alt="Mag images">
+
+            <img class="responsive-media" src="projects/magboard.jpg" alt="Moodboard">
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+ <div class="footer">
+    <div class="navigation">
+      <a href="about.html">ABOUT</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="mailto:rritiprasad8@gmail.com">CONTACT</a> 
+    </div>
+    <p>&copy; 2023 ritiprada</p>
+  </div>
+    
+</body>
+
+</html>
